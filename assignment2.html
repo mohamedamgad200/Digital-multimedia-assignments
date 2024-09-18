@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Assignment_Two</title>
+        <h1 align="center" >Assignment 2</h1>
+        <!--internal style with css make a button with class of button with margin 10 pixel 
+            and display in same line and make first alphabet capitalize and 
+            we make a selector by class for button and we make selector by id
+         -->
+
+        <style>
+            .butons{margin:10px}
+            p#f_b{display: inline;font-size:2em;}
+            .butons button{text-transform: capitalize;font-size:2em;}
+        </style>
+    </head>
+  <body>
+      <div>
+        <p id="f_b">view plainprint?</p>
+      </div>
+    <div>
+        <p id="f_b">Number 1:</p>
+        <input type="text" id="first_number">
+    </div>
+    <br>
+    <div>
+        <p id="f_b">Number 2:</p>
+        <input type="text" id="second_number">
+    </div>
+    <div class="butons">
+        <button onclick="Addition()">add</button>
+        <button onclick="Subtraction()">sub</button>
+        <button onclick="Multiplication()">mul</button>
+        <button onclick="Division()">div</button>
+        <button onclick="Moduls()">mod</button>
+    </div>
+    <div>
+        <p id="f_b">Get Result :</p>
+        <input type="text" id="result">
+    </div>
+    <script>
+            // calling by id for (first-number&&second_number&&result)
+            call = document.getElementById("result");
+            firstnumber = document.getElementById("first_number");
+            secondnumber = document.getElementById("second_number");
+            // function add two numbers
+            function Addition() {
+                //parsefloat handling floatnumber 
+                        var number_1 = firstnumber.value;
+                        number_1 = parseFloat(number_1);
+                        var number_2 = secondnumber.value;
+                        number_2 = parseFloat(number_2); 
+                        Z = (number_1+number_2);
+                        call.value=(Z);
+                    }
+            // function sub two numbers
+            function Subtraction() {
+                        var number_1 = firstnumber.value;
+                        number_1 = parseFloat(number_1);
+                        var number_2 = secondnumber.value;
+                        number_2 = parseFloat(number_2); 
+                        Z = (number_1-number_2);
+                        call.value=(Z);
+                    }
+            // function mul two numbers
+            function Multiplication() {
+                        var number_1 = firstnumber.value;
+                        number_1 = parseFloat(number_1);
+                        var number_2 = secondnumber.value;
+                        number_2 = parseFloat(number_2); 
+                        Z = (number_1*number_2);
+                        call.value=(Z);
+                    }
+            // function div two numbers
+            function Division() {
+                        var number_1 =firstnumber.value;
+                        number_1 = parseFloat(number_1);
+                        var number_2 = secondnumber.value;
+                        number_2 = parseFloat(number_2); 
+                        Z = (number_1/number_2);
+                        call.value=(Z);
+                    }
+            // function mod two numbers
+            function Moduls() {
+                        var number_1 = firstnumber.value;
+                        number_1 = parseFloat(number_1);
+                        var number_2 = secondnumber.value;
+                        number_2 = parseFloat(number_2); 
+                        Z = (number_1%number_2);
+                        call.value=(Z);
+                    }
+    </script>
+  </body>
+ </html>

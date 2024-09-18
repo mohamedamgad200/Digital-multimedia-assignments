@@ -1,0 +1,61 @@
+<html>
+    <!--make a header-->
+    <head>
+        <title>Assignment_one</title>
+    </head>
+    <body>
+        <!--make the header in th center by allining-->
+        <h1 align="center">Assignment 1</h1>
+        <!--make form and set the action url of file we need to save data in it# we don't have a file and action is post that meaning the data not apper in url but get data apper in url  -->
+    <form action="#" method="post">
+        <!--  div tag is often used to group block-elements to format them with styles and a division or a section in an HTML document and using usually in css-->
+        <div>
+            <!--make a table -->
+            <table border="6" width="100%">
+                <!-- first table row contain table header name and value -->
+                <tr>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+                <!--second row contain table data which input name as a text  -->
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" placeholder="Enter your name here..">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" id="gen">
+                        <label for="gen">Male</label>
+                        <br>
+                        <input type="radio" name="gender" id="gen_2" checked>
+                        <label for="gen_2">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>
+                        <select multiple>
+                            <option value="English" selected>English</option>
+                            <option value="Arabic">Arabic</option>
+                            <option value="China" selected>China</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comment</td>
+                    <td>
+                        <textarea cols="50" rows="10" placeholder="Enter your comment here.."></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div align="center">
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    </body>
+</html>
